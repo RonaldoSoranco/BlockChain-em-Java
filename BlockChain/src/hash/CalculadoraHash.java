@@ -1,4 +1,6 @@
 package hash;
 
-public class CalculadoraHash {
+public interface CalculadoraHash {
+
+    String calcular(String entrada);
 }
