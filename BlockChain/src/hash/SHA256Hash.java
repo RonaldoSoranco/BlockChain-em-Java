@@ -11,7 +11,7 @@ public class SHA256Hash implements CalculadoraHash {
             MessageDigest digest = MessageDigest.getInstance("SHA-256");
             byte[] hashBytes = digest.digest(entrada.getBytes());
             
-          // Converte para o decimal
+          // Converte para o hexadecimal
             StringBuilder hexString = new StringBuilder();
             for (byte b : hashBytes) {
                 String hex = Integer.toHexString(0xff & b);

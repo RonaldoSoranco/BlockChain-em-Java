@@ -1,4 +1,8 @@
 package repo;
 
-public class Armazenador {
+import Block.Cadeia;
+
+public interface Armazenador {
+    void salvar(Cadeia cadeia);
+    Cadeia carregar();
 }
